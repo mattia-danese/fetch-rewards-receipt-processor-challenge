@@ -83,4 +83,4 @@ def get_score(id):
     return jsonify({"points": db_scores[id]}), HTTPStatus.OK
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=5000)
